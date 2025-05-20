@@ -48,3 +48,12 @@ Find and report **2 bugs** 001 and 002 using GitHub Issues. Use this format:
 **Expected**: Task should still be visible  
 **Actual**: Task disappears  
 **Severity**: Medium
+
+---
+
+## 💭 Reflection  
+Should be captured in your `Bug_Report_Summary.md` file.
+
+*How to edit a [markdownfile](https://www.markdownguide.org/basic-syntax/#headings)*
+
+###  NOTE: You should not fork the repository
