@@ -48,7 +48,7 @@ Find and report **2 bugs** 001 and 002 using GitHub Issues. Use this format:
 **Expected**: Task should still be visible  
 **Actual**: Task disappears  
 **Severity**: Medium
-
+```
 ---
 
 ## 💭 Reflection  
