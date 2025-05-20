@@ -27,11 +27,9 @@
 ## 📚 **Assignment Questions**
 
 ### Question 1 📋  
-Write down **3 expected behaviours** that a To-Do app should have.  
-Example:
+Write down **3 expected behaviours** that a To-Do app should have in the `Bug_Report_Summary.md` file.  
+📌Example:
 * Tasks should not be added if the input is empty.
-
-📌 Add this list to your `Bug_Report_Summary.md`.
 
 ---
 
