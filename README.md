@@ -23,7 +23,21 @@
 🚨 **Note**: You must raise the bug reports directly on GitHub using the Issues tab of the class repository. These issues will be referenced by ID and linked in your `Bug_Report_Summary.md` file.
 
 ---
+## 🚀 Run in VS Code (Live Server)
 
+### **Prerequisites**
+- Install [VS Code](https://code.visualstudio.com/download)
+- Add the [Live Server extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+
+### **Quick Setup**
+1. Clone and open the repository:
+   ```bash
+   git clone https://github.com/PLP-Database-DEPT/swt-w1.git
+   cd swt-w1
+   code .
+
+2. Open todo-tracker.html in VS Code's Explorer (Ctrl+Shift+E), right-click, and select Open with Live Server.
+---
 ## 📚 **Assignment Questions**
 
 ### Question 1 📋  
