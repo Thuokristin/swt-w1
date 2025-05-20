@@ -30,8 +30,6 @@
 Write down **3 expected behaviours** that a To-Do app should have.  
 Example:
 * Tasks should not be added if the input is empty.
-* Tasks should be visible after adding.
-* Tasks should persist after refreshing the page.
 
 📌 Add this list to your `Bug_Report_Summary.md`.
 
