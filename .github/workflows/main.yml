@@ -1,0 +1,89 @@
+name: Autograding Tests
+
+on:
+  push:
+  workflow_dispatch:
+  repository_dispatch:
+
+permissions:
+  checks: write
+  actions: read
+  contents: read
+
+jobs:
+  check-bug-report-edited:
+    runs-on: ubuntu-latest
+    if: github.actor != 'github-classroom[bot]'
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v4
+
+    - name: Check if Bug_Report_Summary.md was edited
+      id: check-edits
+      run: |
+        # Save the original template
+        cat <<EOF > original.md
+# 🐞 Bug Report Summary
+
+## 🧾 Student Details  
+**Name**: [Your Full Name]  
+**Cohort**: [e.g., August 2024]  
+**Date**: [Submission Date]
+
+---
+
+## ✅ Expected Behaviors  
+List 3 things you expect the To-Do app to do correctly.
+
+1. [e.g., Tasks should not be added if input is empty]  
+2. [e.g., Tasks should remain after page reload]  
+3. [e.g., Clicking “Complete” should strike through the task]
+
+---
+
+## 🐛 Reported Bugs  
+
+### 🐞 BUG-001  
+**Title**: [Copy-paste GitHub Issue Title]  
+**GitHub Link**: [Paste Issue Link]  
+**Requirement Affected**: [e.g., Input Validation]  
+**Severity**: [High / Medium / Low]  
+**Summary**:  
+[1–2 sentences describing the bug and its impact.]
+
+---
+
+### 🐞 BUG-002  
+**Title**: [Copy-paste GitHub Issue Title]  
+**GitHub Link**: [Paste Issue Link]  
+**Requirement Affected**: [e.g., Data Persistence]  
+**Severity**: [High / Medium / Low]  
+**Summary**:  
+[1–2 sentences describing the bug and its impact.]
+
+---
+
+## 💭 Reflection  
+
+Answer briefly (1–2 paragraphs):
+
+- What was your testing approach?  
+- What did you find easy or difficult during the task?  
+- How confident are you now in identifying and reporting bugs?
+EOF
+
+        # Compare files
+        if diff -q Bug_Report_Summary.md original.md > /dev/null; then
+          echo "No edits found. Learner has not modified the file."
+          echo "result=false" >> $GITHUB_OUTPUT
+        else
+          echo "File has been edited."
+          echo "result=true" >> $GITHUB_OUTPUT
+        fi
+
+    - name: Autograding Reporter
+      uses: classroom-resources/autograding-grading-reporter@v1
+      with:
+        runners: edited-check
+      env:
+        EDITED-CHECK_RESULTS: "${{ steps.check-edits.outputs.result }}"
