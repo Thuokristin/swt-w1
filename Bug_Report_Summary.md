@@ -1,40 +1,41 @@
 # 🐞 Bug Report Summary
 
 ## 🧾 Student Details  
-**Name**: [Your Full Name]  
-**Cohort**: [e.g., August 2024]  
-**Date**: [Submission Date]
+**Name**: [Christine Wanjiku Thuo]  
+**Cohort**: [February 2025]  
+**Date**: [27th May 2025]
 
 ---
 
 ## ✅ Expected Behaviors  
 List 3 things you expect the To-Do app to do correctly.
 
-1. [e.g., Tasks should not be added if input is empty]  
-2. [e.g., Tasks should remain after page reload]  
-3. [e.g., Clicking “Complete” should strike through the task]
+1. [Tasks should be added to the list when the "Add" button is clicked]  
+2. [Users should be able to delete tasks from the list]  
+3. [The task input field should clear after a task is added]
 
 ---
 
 ## 🐛 Reported Bugs  
 
 ### 🐞 BUG-001  
-**Title**: [Copy-paste GitHub Issue Title]  
-**GitHub Link**: [Paste Issue Link]  
-**Requirement Affected**: [e.g., Input Validation]  
-**Severity**: [High / Medium / Low]  
+**Title**: [Bug 001: Added tasks disappear after page refresh]  
+**GitHub Link**: [https://github.com/PLP-Database-Design/week-1-Thuokristin/issues/1]  
+**Requirement Affected**: [Input Validation]  
+**Severity**: [Medium]  
 **Summary**:  
-[1–2 sentences describing the bug and its impact.]
+[When you add task it appears but when you refresh the page it disappears. This affects the page since you cannot add a new task]
 
 ---
 
 ### 🐞 BUG-002  
-**Title**: [Copy-paste GitHub Issue Title]  
-**GitHub Link**: [Paste Issue Link]  
-**Requirement Affected**: [e.g., Data Persistence]  
-**Severity**: [High / Medium / Low]  
+**Title**: [Bug 002: No option to delete or remove tasks from the list]  
+**GitHub Link**: [https://github.com/PLP-Database-Design/week-1-Thuokristin/issues/2]  
+**Requirement Affected**: [ Data lost]  
+**Severity**: [High]  
 **Summary**:  
-[1–2 sentences describing the bug and its impact.]
+[There should be a mechanism (e.g., a "Delete" button, an "x" icon) to remove individual tasks from the list.
+ Once a task is added, there is no visible way to delete or remove it.it affects basic functionality]
 
 ---
 
@@ -42,7 +43,7 @@ List 3 things you expect the To-Do app to do correctly.
 
 Answer briefly (1–2 paragraphs):
 
-- What was your testing approach?  
-- What did you find easy or difficult during the task?  
-- How confident are you now in identifying and reporting bugs?
+- What was your testing approach?  Manual Testing
+- What did you find easy or difficult during the task?  What i found easy was the structured bug report format. The difficult part was access to github repository.
+- How confident are you now in identifying and reporting bugs? slightly confident
 
